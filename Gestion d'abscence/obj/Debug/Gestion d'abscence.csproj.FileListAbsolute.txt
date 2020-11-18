@@ -1,0 +1,24 @@
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\bin\Debug\Gestion d'abscence.exe.config
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\bin\Debug\Gestion d'abscence.exe
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\bin\Debug\Gestion d'abscence.pdb
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\obj\Debug\Gestion d'abscence.csprojAssemblyReference.cache
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\obj\Debug\Gestion_d_abscence.Properties.Resources.resources
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\obj\Debug\Gestion d'abscence.csproj.GenerateResource.cache
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\obj\Debug\Gestion d'abscence.csproj.CoreCompileInputs.cache
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\obj\Debug\Gestion d'abscence.exe
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\obj\Debug\Gestion d'abscence.pdb
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\obj\Debug\Gestion_d_abscence.frmLogin.resources
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\obj\Debug\Gestion_d_abscence.frmMenu.resources
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\obj\Debug\Gestion_d_abscence.frmTeachingUnit.resources
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\obj\Debug\Gestion_d_abscence.frmAttendance.resources
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\bin\Debug\DB.dll
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\bin\Debug\DTO.dll
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\bin\Debug\PL.dll
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\bin\Debug\BLL.dll
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\bin\Debug\DAL.dll
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\bin\Debug\DB.pdb
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\bin\Debug\DTO.pdb
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\bin\Debug\PL.pdb
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\bin\Debug\BLL.pdb
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\bin\Debug\DAL.pdb
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\obj\Debug\Gestion d'abscence.csproj.CopyComplete

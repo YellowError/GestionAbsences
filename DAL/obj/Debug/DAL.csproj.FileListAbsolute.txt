@@ -1,0 +1,11 @@
+D:\cours\vs2019\Gestion d'abscence\DAL\bin\Debug\DAL.dll
+D:\cours\vs2019\Gestion d'abscence\DAL\bin\Debug\DAL.pdb
+D:\cours\vs2019\Gestion d'abscence\DAL\bin\Debug\DB.dll
+D:\cours\vs2019\Gestion d'abscence\DAL\bin\Debug\DTO.dll
+D:\cours\vs2019\Gestion d'abscence\DAL\bin\Debug\DB.pdb
+D:\cours\vs2019\Gestion d'abscence\DAL\bin\Debug\DTO.pdb
+D:\cours\vs2019\Gestion d'abscence\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\cours\vs2019\Gestion d'abscence\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\cours\vs2019\Gestion d'abscence\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\cours\vs2019\Gestion d'abscence\DAL\obj\Debug\DAL.dll
+D:\cours\vs2019\Gestion d'abscence\DAL\obj\Debug\DAL.pdb

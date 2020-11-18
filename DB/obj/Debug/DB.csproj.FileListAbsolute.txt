@@ -1,0 +1,6 @@
+D:\cours\vs2019\Gestion d'abscence\DB\bin\Debug\DB.dll
+D:\cours\vs2019\Gestion d'abscence\DB\bin\Debug\DB.pdb
+D:\cours\vs2019\Gestion d'abscence\DB\obj\Debug\DB.csprojAssemblyReference.cache
+D:\cours\vs2019\Gestion d'abscence\DB\obj\Debug\DB.csproj.CoreCompileInputs.cache
+D:\cours\vs2019\Gestion d'abscence\DB\obj\Debug\DB.dll
+D:\cours\vs2019\Gestion d'abscence\DB\obj\Debug\DB.pdb
