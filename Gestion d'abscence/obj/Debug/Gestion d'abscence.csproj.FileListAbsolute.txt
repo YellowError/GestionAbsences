@@ -22,3 +22,6 @@ D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\bin\Debug\PL.pdb
 D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\bin\Debug\BLL.pdb
 D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\bin\Debug\DAL.pdb
 D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\obj\Debug\Gestion d'abscence.csproj.CopyComplete
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\obj\Debug\Gestion_d_abscence.frmShowStudentsByUe.resources
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\obj\Debug\Gestion_d_abscence.frmModifyUt.resources
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\obj\Debug\Gestion_d_abscence.AddUnit.resources

@@ -8,7 +8,11 @@ using BLL;
 
 namespace PL
 {
-    class PlStudent
+    public class PlStudent
     {
+        public static List<DtoStudent> getStudentsByIds(List<int> idStudent)
+        {
+            return BllStudent.getStudentsByIds(idStudent);
+        }
     }
 }

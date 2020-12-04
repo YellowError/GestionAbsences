@@ -16,28 +16,63 @@ namespace DAL
             List<DtoUt> lstDtoUt = new List<DtoUt>();
             foreach (Ut ut in Ut.uts)
             {
-                lstDtoUt.Add(new DtoUt() { Name = ut.Name, Periodes = ut.Periodes, StartAt = ut.StartAt, EndAt = ut.EndAt, Decisive = ut.Decisive, Teacher = ut.Teacher, Id=ut.Id });
+                lstDtoUt.Add(new DtoUt() { Name = ut.Name, Periodes = ut.Periodes, StartAt = ut.StartAt, EndAt = ut.EndAt, Decisive = ut.Decisive, Teacher = ut.Teacher, Id=ut.Id, IdStudent=ut.IdStudents });
             }
             return lstDtoUt;
         }
-        public static DtoUt getUtById(string name)
+        public static List<DtoUt> getUtById(string name)
         {
             try
             {
-                Ut ut = Ut.uts.Find(item => item.Name.ToLower().Contains(name.ToLower()));
-                Console.WriteLine("value of ut is : {0}", ut);
-                return new DtoUt() { Name = ut.Name, Periodes = ut.Periodes, StartAt = ut.StartAt, EndAt = ut.EndAt, Decisive = ut.Decisive, Teacher = ut.Teacher, Id = ut.Id };
+                List<Ut> uts = Ut.uts.FindAll(item => item.Name.ToLower().Contains(name.ToLower()));
+                List<DtoUt> dtoUts = new List<DtoUt>();
+                foreach (var ut in uts)
+                {
+                    dtoUts.Add(new DtoUt() { Name = ut.Name, Periodes = ut.Periodes, StartAt = ut.StartAt, EndAt = ut.EndAt, Decisive = ut.Decisive, Teacher = ut.Teacher, Id = ut.Id, IdStudent=ut.IdStudents });
+                }
+                return dtoUts;
             }
             catch (NullReferenceException)
             {
-                return new DtoUt() { ExceptionMessage = "Not Found" };
+                List<DtoUt> fail = new List<DtoUt>();
+                fail.Add(new DtoUt() { ExceptionMessage = "not found" });
+                return fail;
             }
         }
 
         public static string deleteUt(DtoUt ut)
         {
-            Ut.uts.RemoveAt(ut.Id);
-            return "Remove done";
+            Ut.uts.RemoveAt(findIndex(ut));
+            return "Remove " + ut.Name + " done";
+        }
+
+        private static int findIndex(DtoUt ut)
+        {
+            return Ut.uts.FindIndex(x => x.Name == ut.Name);
+        }
+
+        public static string updateUt(DtoUt ut)
+        {
+            foreach (Ut item in Ut.uts)
+            {
+                if(item.Id == ut.Id)
+                {
+                    item.Name = ut.Name;
+                    item.Periodes = ut.Periodes;
+                    item.StartAt = ut.StartAt;
+                    item.EndAt = ut.EndAt;
+                    item.Decisive = ut.Decisive;
+                    item.Teacher = ut.Teacher;
+                }
+            }
+
+            return "Update done";
+        }
+
+        public static string CreateUt(DtoUt ut)
+        {
+            Ut.uts.Add(new Ut(ut.Name, ut.Periodes, ut.StartAt, ut.EndAt, ut.Teacher, ut.Decisive));
+            return "Sucessful";
         }
     }
 }

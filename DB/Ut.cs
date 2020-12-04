@@ -9,6 +9,14 @@ namespace DB
     public class Ut
     {
         public static List<Ut> uts = new List<Ut>();
+
+        List<int> idStudents = new List<int>();
+        public List<int> IdStudents
+        {
+            get { return this.idStudents; }
+            set { this.idStudents = value; }
+        }
+
         public string Name { get; set; }
         public int Periodes { get; set; }
         public DateTime StartAt { get; set; }
@@ -46,7 +54,7 @@ namespace DB
 
         }
 
-        public Ut() { }
+        public Ut() {}
 
         public static void LoadUt()
         {
@@ -58,7 +66,32 @@ namespace DB
             uts.Add(new Ut(utsName[4], 90, new DateTime(2021, 03, 07), new DateTime(2021, 04, 29), "Daniel Delguste", false));
             uts.Add(new Ut(utsName[5], 110, new DateTime(2021, 04, 01), new DateTime(2021, 06, 12), "Daniel Delguste", true));
             uts.Add(new Ut(utsName[6], 145, new DateTime(2021, 04, 10), new DateTime(2021, 06, 18), "Daniel Delguste", true));
-
+            uts[0].IdStudents.Add(1);
+            uts[0].IdStudents.Add(2);
+            uts[0].IdStudents.Add(3);
+            uts[1].IdStudents.Add(1);
+            uts[1].IdStudents.Add(2);
+            uts[1].IdStudents.Add(4);
+            uts[2].IdStudents.Add(1);
+            uts[2].IdStudents.Add(2);
+            uts[2].IdStudents.Add(3);
+            uts[2].IdStudents.Add(4);
+            uts[2].IdStudents.Add(5);
+            uts[3].IdStudents.Add(6);
+            uts[3].IdStudents.Add(5);
+            uts[3].IdStudents.Add(4);
+            uts[4].IdStudents.Add(3);
+            uts[4].IdStudents.Add(5);
+            uts[4].IdStudents.Add(7);
+            uts[5].IdStudents.Add(1);
+            uts[5].IdStudents.Add(4);
+            uts[6].IdStudents.Add(1);
+            uts[6].IdStudents.Add(2);
+            uts[6].IdStudents.Add(3);
+            uts[6].IdStudents.Add(4);
+            uts[6].IdStudents.Add(5);
+            uts[6].IdStudents.Add(6);
+            uts[6].IdStudents.Add(7);
         }
 
     }

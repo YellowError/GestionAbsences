@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DB;
 
 namespace Gestion_d_abscence
 {
@@ -30,6 +31,7 @@ namespace Gestion_d_abscence
 
         private void btnTogglePasswordView_Click(object sender, EventArgs e)
         {
+
             txbPassword.UseSystemPasswordChar = !txbPassword.UseSystemPasswordChar;
             if(btnTogglePasswordView.BackgroundImage == imageOpenEye)
             {
@@ -43,12 +45,22 @@ namespace Gestion_d_abscence
 
         private void btnTogglePasswordView_MouseDown(object sender, MouseEventArgs e)
         {
-
+            
         }
 
         private void btnTogglePasswordView_MouseUp(object sender, MouseEventArgs e)
         {
 
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            Ut.LoadUt();
+            DbStudents.LoadStudents();
+        }
+
+        private void txbLogin_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }

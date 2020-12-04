@@ -16,9 +16,11 @@ namespace DTO
         public bool Decisive { get; set; }
         public int Id { get; set; }
 
+        public List<int> IdStudent { get; set; }
+
         public string ExceptionMessage { get; set; }
 
-        public DtoUt(string name, int periodes, DateTime startAt, DateTime endAt, string teacher, bool decisive, int id)
+        public DtoUt(string name, int periodes, DateTime startAt, DateTime endAt, string teacher, bool decisive, int id, List<int> idStud)
         {
             this.Name = name;
             this.Periodes = periodes;
@@ -27,6 +29,7 @@ namespace DTO
             this.Teacher = teacher;
             this.Decisive = decisive;
             this.Id = id;
+            this.IdStudent = idStud;
         }
 
         public DtoUt(string exceptionMessage)
@@ -34,6 +37,6 @@ namespace DTO
             this.ExceptionMessage = exceptionMessage;
         }
 
-        public DtoUt() { }
+        public DtoUt() {  }
     }
 }

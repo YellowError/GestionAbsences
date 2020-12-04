@@ -17,7 +17,7 @@ namespace PL
             return BllUt.getAllUt();
         }
 
-        public static DtoUt getUtById(string name)
+        public static List<DtoUt> getUtById(string name)
         {
             return BllUt.getUtById(name);
         }
@@ -28,16 +28,19 @@ namespace PL
             {
                 dgvUt.Rows.Clear();
 
-                DtoUt ut = PlUt.getUtById(txbSearch.Text);
-                if (ut.ExceptionMessage != null)
+                List<DtoUt> ut = PlUt.getUtById(txbSearch.Text);
+                if (ut.Count == 0)
                 {
-                    lblNotFound.Text = ut.ExceptionMessage;
+                    lblNotFound.Text = "not found" ;
                     lblNotFound.Visible = true;
                 }
                 else
                 {
                     lblNotFound.Visible = false;
-                    dgvUt.Rows.Add(ut.Name, ut.Periodes, ut.StartAt, ut.EndAt, ut.Decisive, ut.Teacher);
+                    foreach(DtoUt item in ut)
+                    {
+                        dgvUt.Rows.Add(item.Name, item.Periodes, item.StartAt, item.EndAt, item.Decisive, item.Teacher);
+                    }
                 }
 
             }
@@ -56,6 +59,16 @@ namespace PL
         public static string deleteUt(DtoUt ut)
         {
             return BllUt.deleteUt(ut);
+        }
+
+        public static string PlUpdateUt(DtoUt ut)
+        {
+            return BllUt.updateUt(ut);
+        }
+
+        public static string PlCreateUt(DtoUt ut)
+        {
+            return BllUt.CreateUt(ut);
         }
     }
 }

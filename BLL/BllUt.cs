@@ -17,7 +17,7 @@ namespace BLL
 
         }
 
-        public static DtoUt getUtById(string name)
+        public static List<DtoUt> getUtById(string name)
         {
             return DalUe.getUtById(name);
         }
@@ -25,6 +25,16 @@ namespace BLL
         public static string deleteUt(DtoUt ut)
         {
             return DalUe.deleteUt(ut);
+        }
+
+        public static string updateUt(DtoUt ut)
+        {
+            return DalUe.updateUt(ut);
+        }
+
+        public static string CreateUt(DtoUt ut)
+        {
+            return DalUe.CreateUt(ut);
         }
     }
 }

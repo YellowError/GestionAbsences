@@ -8,7 +8,11 @@ using DAL;
 
 namespace BLL
 {
-    class BllStudent
+    public class BllStudent
     {
+        public static List<DtoStudent> getStudentsByIds(List<int> idStudent)
+        {
+            return DalStudent.getStudentsByIds(idStudent);
+        }
     }
 }

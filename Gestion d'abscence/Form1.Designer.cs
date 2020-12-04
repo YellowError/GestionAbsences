@@ -54,6 +54,7 @@
             this.txbLogin.Size = new System.Drawing.Size(230, 22);
             this.txbLogin.TabIndex = 1;
             this.txbLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txbLogin.TextChanged += new System.EventHandler(this.txbLogin_TextChanged);
             // 
             // btnLogin
             // 
@@ -177,6 +178,7 @@
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOG IN";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.pnlLogin.ResumeLayout(false);
             this.pnlLogin.PerformLayout();
             this.panel1.ResumeLayout(false);

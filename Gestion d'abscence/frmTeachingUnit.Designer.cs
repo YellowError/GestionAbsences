@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblAllTeachingUnit = new System.Windows.Forms.Label();
             this.dgvUt = new System.Windows.Forms.DataGridView();
             this.Denomination = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,6 +45,8 @@
             this.btnModifierUt = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.lblCrudMessage = new System.Windows.Forms.Label();
+            this.btnShowStudents = new System.Windows.Forms.Button();
+            this.btnAddUnit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUt)).BeginInit();
             this.pnlLogin.SuspendLayout();
             this.SuspendLayout();
@@ -66,24 +68,24 @@
             this.dgvUt.AllowUserToDeleteRows = false;
             this.dgvUt.AllowUserToResizeColumns = false;
             this.dgvUt.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            this.dgvUt.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvUt.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvUt.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvUt.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.dgvUt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvUt.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUt.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUt.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvUt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUt.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Denomination,
@@ -92,16 +94,17 @@
             this.endOn,
             this.Decisive,
             this.Teacher});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvUt.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvUt.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvUt.Location = new System.Drawing.Point(28, 158);
             this.dgvUt.Name = "dgvUt";
+            this.dgvUt.ReadOnly = true;
             this.dgvUt.Size = new System.Drawing.Size(742, 261);
             this.dgvUt.TabIndex = 2;
             this.dgvUt.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUt_CellContentClick);
@@ -147,7 +150,7 @@
             // 
             this.lblNotFound.AutoSize = true;
             this.lblNotFound.ForeColor = System.Drawing.Color.Red;
-            this.lblNotFound.Location = new System.Drawing.Point(537, 136);
+            this.lblNotFound.Location = new System.Drawing.Point(630, 136);
             this.lblNotFound.Name = "lblNotFound";
             this.lblNotFound.Size = new System.Drawing.Size(57, 13);
             this.lblNotFound.TabIndex = 4;
@@ -171,7 +174,7 @@
             // 
             this.pnlLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.pnlLogin.Controls.Add(this.txbFindById);
-            this.pnlLogin.Location = new System.Drawing.Point(540, 96);
+            this.pnlLogin.Location = new System.Drawing.Point(540, 92);
             this.pnlLogin.Name = "pnlLogin";
             this.pnlLogin.Size = new System.Drawing.Size(230, 37);
             this.pnlLogin.TabIndex = 8;
@@ -188,9 +191,10 @@
             this.btnModifierUt.Name = "btnModifierUt";
             this.btnModifierUt.Size = new System.Drawing.Size(103, 33);
             this.btnModifierUt.TabIndex = 9;
-            this.btnModifierUt.Text = "Modifier";
+            this.btnModifierUt.Text = "Modify";
             this.btnModifierUt.UseVisualStyleBackColor = false;
             this.btnModifierUt.Visible = false;
+            this.btnModifierUt.Click += new System.EventHandler(this.btnModifierUt_Click);
             // 
             // btnSupprimer
             // 
@@ -204,7 +208,7 @@
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(103, 33);
             this.btnSupprimer.TabIndex = 10;
-            this.btnSupprimer.Text = "Supprimer";
+            this.btnSupprimer.Text = "Delete";
             this.btnSupprimer.UseVisualStyleBackColor = false;
             this.btnSupprimer.Visible = false;
             this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
@@ -213,12 +217,45 @@
             // 
             this.lblCrudMessage.AutoSize = true;
             this.lblCrudMessage.ForeColor = System.Drawing.Color.Red;
-            this.lblCrudMessage.Location = new System.Drawing.Point(246, 106);
+            this.lblCrudMessage.Location = new System.Drawing.Point(370, 136);
             this.lblCrudMessage.Name = "lblCrudMessage";
             this.lblCrudMessage.Size = new System.Drawing.Size(73, 13);
             this.lblCrudMessage.TabIndex = 11;
             this.lblCrudMessage.Text = "crud message";
             this.lblCrudMessage.Visible = false;
+            // 
+            // btnShowStudents
+            // 
+            this.btnShowStudents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnShowStudents.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnShowStudents.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnShowStudents.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
+            this.btnShowStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowStudents.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnShowStudents.Location = new System.Drawing.Point(246, 96);
+            this.btnShowStudents.Name = "btnShowStudents";
+            this.btnShowStudents.Size = new System.Drawing.Size(103, 33);
+            this.btnShowStudents.TabIndex = 12;
+            this.btnShowStudents.Text = "Show Students";
+            this.btnShowStudents.UseVisualStyleBackColor = false;
+            this.btnShowStudents.Visible = false;
+            this.btnShowStudents.Click += new System.EventHandler(this.btnShowStudents_Click);
+            // 
+            // btnAddUnit
+            // 
+            this.btnAddUnit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnAddUnit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnAddUnit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnAddUnit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
+            this.btnAddUnit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddUnit.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAddUnit.Location = new System.Drawing.Point(667, 30);
+            this.btnAddUnit.Name = "btnAddUnit";
+            this.btnAddUnit.Size = new System.Drawing.Size(103, 33);
+            this.btnAddUnit.TabIndex = 13;
+            this.btnAddUnit.Text = "Add Unit";
+            this.btnAddUnit.UseVisualStyleBackColor = false;
+            this.btnAddUnit.Click += new System.EventHandler(this.btnAddUnit_Click);
             // 
             // frmTeachingUnit
             // 
@@ -226,6 +263,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAddUnit);
+            this.Controls.Add(this.btnShowStudents);
             this.Controls.Add(this.lblCrudMessage);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnModifierUt);
@@ -240,6 +279,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TEACHING UNIT";
             this.Load += new System.EventHandler(this.frmTeachingUnit_Load);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.frmTeachingUnit_MouseClick);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUt)).EndInit();
             this.pnlLogin.ResumeLayout(false);
             this.pnlLogin.PerformLayout();
@@ -263,5 +303,7 @@
         private System.Windows.Forms.Button btnModifierUt;
         private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.Label lblCrudMessage;
+        private System.Windows.Forms.Button btnShowStudents;
+        private System.Windows.Forms.Button btnAddUnit;
     }
 }

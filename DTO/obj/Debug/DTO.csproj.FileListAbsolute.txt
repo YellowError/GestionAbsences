@@ -4,3 +4,6 @@ D:\cours\vs2019\Gestion d'abscence\DTO\obj\Debug\DTO.csprojAssemblyReference.cac
 D:\cours\vs2019\Gestion d'abscence\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\cours\vs2019\Gestion d'abscence\DTO\obj\Debug\DTO.dll
 D:\cours\vs2019\Gestion d'abscence\DTO\obj\Debug\DTO.pdb
+D:\cours\vs2019\Gestion d'abscence\DTO\bin\Debug\DB.dll
+D:\cours\vs2019\Gestion d'abscence\DTO\bin\Debug\DB.pdb
+D:\cours\vs2019\Gestion d'abscence\DTO\obj\Debug\DTO.csproj.CopyComplete
