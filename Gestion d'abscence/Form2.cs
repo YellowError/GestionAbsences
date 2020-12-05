@@ -42,5 +42,12 @@ namespace Gestion_d_abscence
             frm.Show();
             this.Hide();
         }
+
+        private void btnStudents_Click(object sender, EventArgs e)
+        {
+            frmManageStudents frm = new frmManageStudents();
+            frm.Show();
+            this.Close();
+        }
     }
 }

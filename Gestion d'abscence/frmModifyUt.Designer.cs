@@ -251,13 +251,14 @@
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblTitle.Location = new System.Drawing.Point(216, 47);
+            this.lblTitle.Location = new System.Drawing.Point(232, 60);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(70, 20);
+            this.lblTitle.Size = new System.Drawing.Size(81, 20);
             this.lblTitle.TabIndex = 17;
             this.lblTitle.Text = "title of ut";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // chbDecisive
             // 

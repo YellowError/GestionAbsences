@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTeachingUnit));
             this.lblAllTeachingUnit = new System.Windows.Forms.Label();
             this.dgvUt = new System.Windows.Forms.DataGridView();
             this.Denomination = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,6 +48,8 @@
             this.lblCrudMessage = new System.Windows.Forms.Label();
             this.btnShowStudents = new System.Windows.Forms.Button();
             this.btnAddUnit = new System.Windows.Forms.Button();
+            this.btnTogglePasswordView = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUt)).BeginInit();
             this.pnlLogin.SuspendLayout();
             this.SuspendLayout();
@@ -163,20 +166,21 @@
             this.txbFindById.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbFindById.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbFindById.ForeColor = System.Drawing.Color.Snow;
-            this.txbFindById.Location = new System.Drawing.Point(12, 7);
+            this.txbFindById.Location = new System.Drawing.Point(51, 7);
             this.txbFindById.MaxLength = 20;
             this.txbFindById.Name = "txbFindById";
             this.txbFindById.Size = new System.Drawing.Size(215, 22);
             this.txbFindById.TabIndex = 1;
+            this.txbFindById.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txbFindById_MouseClick_1);
             this.txbFindById.TextChanged += new System.EventHandler(this.txbFindById_TextChanged_1);
             // 
             // pnlLogin
             // 
             this.pnlLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.pnlLogin.Controls.Add(this.txbFindById);
-            this.pnlLogin.Location = new System.Drawing.Point(540, 92);
+            this.pnlLogin.Location = new System.Drawing.Point(493, 92);
             this.pnlLogin.Name = "pnlLogin";
-            this.pnlLogin.Size = new System.Drawing.Size(230, 37);
+            this.pnlLogin.Size = new System.Drawing.Size(277, 37);
             this.pnlLogin.TabIndex = 8;
             // 
             // btnModifierUt
@@ -257,12 +261,48 @@
             this.btnAddUnit.UseVisualStyleBackColor = false;
             this.btnAddUnit.Click += new System.EventHandler(this.btnAddUnit_Click);
             // 
+            // btnTogglePasswordView
+            // 
+            this.btnTogglePasswordView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnTogglePasswordView.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTogglePasswordView.BackgroundImage")));
+            this.btnTogglePasswordView.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnTogglePasswordView.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTogglePasswordView.FlatAppearance.BorderSize = 0;
+            this.btnTogglePasswordView.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnTogglePasswordView.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnTogglePasswordView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTogglePasswordView.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnTogglePasswordView.Location = new System.Drawing.Point(498, 96);
+            this.btnTogglePasswordView.Name = "btnTogglePasswordView";
+            this.btnTogglePasswordView.Padding = new System.Windows.Forms.Padding(5);
+            this.btnTogglePasswordView.Size = new System.Drawing.Size(31, 28);
+            this.btnTogglePasswordView.TabIndex = 14;
+            this.btnTogglePasswordView.UseVisualStyleBackColor = false;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBack.Location = new System.Drawing.Point(12, 12);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(103, 33);
+            this.btnBack.TabIndex = 15;
+            this.btnBack.Text = "<";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // frmTeachingUnit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.btnTogglePasswordView);
             this.Controls.Add(this.btnAddUnit);
             this.Controls.Add(this.btnShowStudents);
             this.Controls.Add(this.lblCrudMessage);
@@ -305,5 +345,7 @@
         private System.Windows.Forms.Label lblCrudMessage;
         private System.Windows.Forms.Button btnShowStudents;
         private System.Windows.Forms.Button btnAddUnit;
+        private System.Windows.Forms.Button btnTogglePasswordView;
+        private System.Windows.Forms.Button btnBack;
     }
 }

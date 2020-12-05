@@ -70,5 +70,15 @@ namespace PL
         {
             return BllUt.CreateUt(ut);
         }
+
+        public static string deleteStudentInUeById(int id, DtoUt utSelected)
+        {
+            return BllUt.deleteStudentInUeById(id, utSelected);
+        }
+
+        public static string addStudentinUt(int id, DtoUt utSelected)
+        {
+            return BllUt.addStudentInUt(id, utSelected);
+        }
     }
 }

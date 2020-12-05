@@ -25,3 +25,6 @@ D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\obj\Debug\Gestion d'abscen
 D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\obj\Debug\Gestion_d_abscence.frmShowStudentsByUe.resources
 D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\obj\Debug\Gestion_d_abscence.frmModifyUt.resources
 D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\obj\Debug\Gestion_d_abscence.AddUnit.resources
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\obj\Debug\Gestion_d_abscence.frmManageStudents.resources
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\obj\Debug\Gestion_d_abscence.frmModifyStudent.resources
+D:\cours\vs2019\Gestion d'abscence\Gestion d'abscence\obj\Debug\Gestion_d_abscence.frmAddStudent.resources

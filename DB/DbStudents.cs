@@ -8,7 +8,7 @@ namespace DB
 {
     public class DbStudents
     {
-        public static List<DbStudents> students = new List<DbStudents>();
+        private static List<DbStudents> students = new List<DbStudents>();
         public static List<DbStudents> Students
         {
             get { return students; }
@@ -41,6 +41,22 @@ namespace DB
             }
         }
 
+        public DbStudents(string lastName, string firstName, int totalAbs)
+        {
+            this.LastName = lastName;
+            this.FirstName = firstName;
+            this.TotalAbsence = totalAbs;
+
+            if (Students.Count < 1)
+            {
+                this.Id = 1;
+            }
+            else
+            {
+                this.Id = Students[Students.Count - 1].Id + 1;
+            }
+        }
+
         public static string addStudent(DbStudents student)
         {
             students.Add(student);
@@ -57,6 +73,8 @@ namespace DB
             Students.Add(new DbStudents("Luigi", "Chiappini"));
             Students.Add(new DbStudents("Kader", "Arouk"));
             Students.Add(new DbStudents("Wilfried", "Tsonga"));
+            Students.Add(new DbStudents("Willy", "Cambray"));
+
         }
 
     }

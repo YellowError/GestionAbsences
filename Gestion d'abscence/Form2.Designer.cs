@@ -127,6 +127,7 @@
             this.btnStudents.TabIndex = 7;
             this.btnStudents.Text = "MANAGE STUDENTS";
             this.btnStudents.UseVisualStyleBackColor = false;
+            this.btnStudents.Click += new System.EventHandler(this.btnStudents_Click);
             // 
             // frmMenu
             // 

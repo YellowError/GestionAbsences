@@ -102,10 +102,6 @@ namespace Gestion_d_abscence
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnAddUnit_Click(object sender, EventArgs e)
         {
@@ -119,6 +115,20 @@ namespace Gestion_d_abscence
             string text = currentRow.Cells[0].Value.ToString();
             List<DtoUt> lst = PlUt.getUtById(text);
             return lst[0];
+        }
+
+        private void txbFindById_MouseClick_1(object sender, MouseEventArgs e)
+        {
+            btnModifierUt.Visible = false;
+            btnShowStudents.Visible = false;
+            btnSupprimer.Visible = false;
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmMenu frm = new frmMenu();
+            frm.Show();
+            this.Close();
         }
     }
 }

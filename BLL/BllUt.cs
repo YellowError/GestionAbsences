@@ -36,5 +36,15 @@ namespace BLL
         {
             return DalUe.CreateUt(ut);
         }
+
+        public static string addStudentInUt(int id, DtoUt utSelected)
+        {
+            return DalUe.addStudentInUt(id, utSelected);
+        }
+
+        public static string deleteStudentInUeById(int id, DtoUt utSelected)
+        {
+            return DalUe.deleteStudentInUeById(id, utSelected);
+        }
     }
 }

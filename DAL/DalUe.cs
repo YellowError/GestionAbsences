@@ -74,5 +74,20 @@ namespace DAL
             Ut.uts.Add(new Ut(ut.Name, ut.Periodes, ut.StartAt, ut.EndAt, ut.Teacher, ut.Decisive));
             return "Sucessful";
         }
+
+        public static string addStudentInUt(int id, DtoUt utSelected)
+        {
+            int index = Ut.uts.FindIndex(x => x.Id == utSelected.Id);
+            Ut.uts[index].IdStudents.Add(id);
+            return "Adding student successful";
+        }
+
+        public static string deleteStudentInUeById(int id, DtoUt utSelected)
+        {
+            int indexOfUtSelected = Ut.uts.FindIndex(ut => ut.Id == utSelected.Id);
+            int index = Ut.uts[indexOfUtSelected].IdStudents.FindIndex(i => i == id);
+            Ut.uts[indexOfUtSelected].IdStudents.RemoveAt(index);
+            return "Delete Done";
+        }
     }
 }
