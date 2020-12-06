@@ -32,10 +32,6 @@
             this.txbDenomination = new System.Windows.Forms.TextBox();
             this.pnlNumberOfPeriode = new System.Windows.Forms.Panel();
             this.txbNumberOfPeriode = new System.Windows.Forms.TextBox();
-            this.pnlStartOn = new System.Windows.Forms.Panel();
-            this.txbStartOn = new System.Windows.Forms.TextBox();
-            this.pnlEndOn = new System.Windows.Forms.Panel();
-            this.txbEndOn = new System.Windows.Forms.TextBox();
             this.pnlTeacher = new System.Windows.Forms.Panel();
             this.txbTeacher = new System.Windows.Forms.TextBox();
             this.lblDenomination = new System.Windows.Forms.Label();
@@ -48,10 +44,10 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.chbDecisive = new System.Windows.Forms.CheckBox();
             this.btnReturn = new System.Windows.Forms.Button();
+            this.dtpStartOn = new System.Windows.Forms.DateTimePicker();
+            this.dtpEndOn = new System.Windows.Forms.DateTimePicker();
             this.pnlDenomination.SuspendLayout();
             this.pnlNumberOfPeriode.SuspendLayout();
-            this.pnlStartOn.SuspendLayout();
-            this.pnlEndOn.SuspendLayout();
             this.pnlTeacher.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,50 +94,6 @@
             this.txbNumberOfPeriode.Size = new System.Drawing.Size(215, 22);
             this.txbNumberOfPeriode.TabIndex = 1;
             this.txbNumberOfPeriode.TextChanged += new System.EventHandler(this.txbNumberOfPeriode_TextChanged);
-            // 
-            // pnlStartOn
-            // 
-            this.pnlStartOn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.pnlStartOn.Controls.Add(this.txbStartOn);
-            this.pnlStartOn.Location = new System.Drawing.Point(189, 212);
-            this.pnlStartOn.Name = "pnlStartOn";
-            this.pnlStartOn.Size = new System.Drawing.Size(230, 37);
-            this.pnlStartOn.TabIndex = 9;
-            // 
-            // txbStartOn
-            // 
-            this.txbStartOn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.txbStartOn.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbStartOn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbStartOn.ForeColor = System.Drawing.Color.Snow;
-            this.txbStartOn.Location = new System.Drawing.Point(12, 7);
-            this.txbStartOn.MaxLength = 20;
-            this.txbStartOn.Name = "txbStartOn";
-            this.txbStartOn.Size = new System.Drawing.Size(215, 22);
-            this.txbStartOn.TabIndex = 1;
-            this.txbStartOn.TextChanged += new System.EventHandler(this.txbStartOn_TextChanged);
-            // 
-            // pnlEndOn
-            // 
-            this.pnlEndOn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.pnlEndOn.Controls.Add(this.txbEndOn);
-            this.pnlEndOn.Location = new System.Drawing.Point(189, 255);
-            this.pnlEndOn.Name = "pnlEndOn";
-            this.pnlEndOn.Size = new System.Drawing.Size(230, 37);
-            this.pnlEndOn.TabIndex = 9;
-            // 
-            // txbEndOn
-            // 
-            this.txbEndOn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.txbEndOn.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbEndOn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbEndOn.ForeColor = System.Drawing.Color.Snow;
-            this.txbEndOn.Location = new System.Drawing.Point(12, 7);
-            this.txbEndOn.MaxLength = 20;
-            this.txbEndOn.Name = "txbEndOn";
-            this.txbEndOn.Size = new System.Drawing.Size(215, 22);
-            this.txbEndOn.TabIndex = 1;
-            this.txbEndOn.TextChanged += new System.EventHandler(this.txbEndOn_TextChanged);
             // 
             // pnlTeacher
             // 
@@ -286,12 +238,30 @@
             this.btnReturn.UseVisualStyleBackColor = false;
             this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
+            // dtpStartOn
+            // 
+            this.dtpStartOn.Location = new System.Drawing.Point(189, 221);
+            this.dtpStartOn.Name = "dtpStartOn";
+            this.dtpStartOn.Size = new System.Drawing.Size(230, 20);
+            this.dtpStartOn.TabIndex = 20;
+            this.dtpStartOn.ValueChanged += new System.EventHandler(this.dtpStartOn_ValueChanged);
+            // 
+            // dtpEndOn
+            // 
+            this.dtpEndOn.Location = new System.Drawing.Point(189, 265);
+            this.dtpEndOn.Name = "dtpEndOn";
+            this.dtpEndOn.Size = new System.Drawing.Size(230, 20);
+            this.dtpEndOn.TabIndex = 21;
+            this.dtpEndOn.ValueChanged += new System.EventHandler(this.dtpEndOn_ValueChanged);
+            // 
             // frmModifyUt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.ClientSize = new System.Drawing.Size(547, 569);
+            this.Controls.Add(this.dtpEndOn);
+            this.Controls.Add(this.dtpStartOn);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.chbDecisive);
             this.Controls.Add(this.lblTitle);
@@ -303,8 +273,6 @@
             this.Controls.Add(this.lblNumberOfPeriods);
             this.Controls.Add(this.lblDenomination);
             this.Controls.Add(this.pnlTeacher);
-            this.Controls.Add(this.pnlEndOn);
-            this.Controls.Add(this.pnlStartOn);
             this.Controls.Add(this.pnlNumberOfPeriode);
             this.Controls.Add(this.pnlDenomination);
             this.MaximizeBox = false;
@@ -318,10 +286,6 @@
             this.pnlDenomination.PerformLayout();
             this.pnlNumberOfPeriode.ResumeLayout(false);
             this.pnlNumberOfPeriode.PerformLayout();
-            this.pnlStartOn.ResumeLayout(false);
-            this.pnlStartOn.PerformLayout();
-            this.pnlEndOn.ResumeLayout(false);
-            this.pnlEndOn.PerformLayout();
             this.pnlTeacher.ResumeLayout(false);
             this.pnlTeacher.PerformLayout();
             this.ResumeLayout(false);
@@ -335,10 +299,6 @@
         private System.Windows.Forms.TextBox txbDenomination;
         private System.Windows.Forms.Panel pnlNumberOfPeriode;
         private System.Windows.Forms.TextBox txbNumberOfPeriode;
-        private System.Windows.Forms.Panel pnlStartOn;
-        private System.Windows.Forms.TextBox txbStartOn;
-        private System.Windows.Forms.Panel pnlEndOn;
-        private System.Windows.Forms.TextBox txbEndOn;
         private System.Windows.Forms.Panel pnlTeacher;
         private System.Windows.Forms.TextBox txbTeacher;
         private System.Windows.Forms.Label lblDenomination;
@@ -351,5 +311,7 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.CheckBox chbDecisive;
         private System.Windows.Forms.Button btnReturn;
+        private System.Windows.Forms.DateTimePicker dtpStartOn;
+        private System.Windows.Forms.DateTimePicker dtpEndOn;
     }
 }

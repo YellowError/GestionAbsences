@@ -25,8 +25,13 @@ namespace Gestion_d_abscence
             lblTitle.Text = currentUt.Name;
             txbDenomination.Text = currentUt.Name;
             txbNumberOfPeriode.Text = currentUt.Periodes.ToString();
-            txbStartOn.Text = currentUt.StartAt.ToString();
-            txbEndOn.Text = currentUt.EndAt.ToString();
+
+            dtpStartOn.Value = currentUt.StartAt.Date;
+            dtpEndOn.Value = currentUt.EndAt.Date;
+
+
+            //txbStartOn.Text = currentUt.StartAt.ToString();
+            //txbEndOn.Text = currentUt.EndAt.ToString();
             if (currentUt.Decisive) chbDecisive.Checked = true;
             txbTeacher.Text = currentUt.Teacher;
             btnModify.Visible = false;
@@ -65,8 +70,8 @@ namespace Gestion_d_abscence
 
         private void btnModify_Click(object sender, EventArgs e)
         {
-            DateTime start = Convert.ToDateTime(txbStartOn.Text);
-            DateTime end = Convert.ToDateTime(txbEndOn.Text);
+            DateTime start = dtpStartOn.Value.Date;
+            DateTime end = dtpEndOn.Value.Date;
 
             DtoUt utUpdated = new DtoUt() { Id = currentUt.Id, Name = txbDenomination.Text, Periodes = Convert.ToInt32(txbNumberOfPeriode.Text), StartAt = start, EndAt = end, Decisive = chbDecisive.Checked, Teacher = txbTeacher.Text };
 
@@ -88,6 +93,16 @@ namespace Gestion_d_abscence
             frmTeachingUnit frm = new frmTeachingUnit();
             frm.Show();
             this.Close();
+        }
+
+        private void dtpStartOn_ValueChanged(object sender, EventArgs e)
+        {
+            btnModify.Visible = true;
+        }
+
+        private void dtpEndOn_ValueChanged(object sender, EventArgs e)
+        {
+            btnModify.Visible = true;
         }
     }
 }

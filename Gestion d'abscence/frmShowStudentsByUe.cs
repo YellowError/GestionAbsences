@@ -25,11 +25,23 @@ namespace Gestion_d_abscence
 
         private void populateCbStudents()
         {
+            cbAddStudentInUt.Items.Clear();
             List<DtoStudent> allStudents = PlStudent.getAllStudents();
-
+            List<DtoStudent> studentsInDgv = PlStudent.getStudentsByIds(currentUt.IdStudent);
             foreach (DtoStudent student in allStudents)
             {
-                cbAddStudentInUt.Items.Add(student.FirstName + " " + student.LastName);
+                bool isAlreadyInDgv = false;
+                foreach (DtoStudent studInDgv in studentsInDgv)
+                {
+                    if(student.Id == studInDgv.Id)
+                    {
+                        isAlreadyInDgv = true;
+                    }
+                }
+                if (!isAlreadyInDgv)
+                {
+                    cbAddStudentInUt.Items.Add(student.FirstName + " " + student.LastName);
+                }
             }
         }
 
@@ -85,6 +97,7 @@ namespace Gestion_d_abscence
                 dgvStudentsByUt.Rows.Add(student.Id, student.FirstName, student.LastName, student.TotalAbsence);
             }
             btnDeleteStudentByUe.Visible = false;
+            populateCbStudents();
         }
 
         private void btnReturn_Click(object sender, EventArgs e)
@@ -109,6 +122,7 @@ namespace Gestion_d_abscence
             btnAddStudentByUe.Visible = false;
             dgvStudentsByUt.Rows.Clear();
             populateDgvStudent();
+            populateCbStudents();
         }
 
         private void cbAddStudentInUt_SelectedIndexChanged(object sender, EventArgs e)

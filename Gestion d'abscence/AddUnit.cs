@@ -21,8 +21,8 @@ namespace Gestion_d_abscence
 
         private void btnCreateUt_Click(object sender, EventArgs e)
         {
-            DateTime start = Convert.ToDateTime(txbStartOn.Text);
-            DateTime end = Convert.ToDateTime(txbEndOn.Text);
+            DateTime start = dtpStartOn.Value.Date;
+            DateTime end = dtpEndOn.Value.Date;
 
             DtoUt utCreated= new DtoUt() { Name = txbDenomination.Text, Periodes = Convert.ToInt32(txbNumberOfPeriode.Text), StartAt = start, EndAt = end, Decisive = chbDecisive.Checked, Teacher = txbTeacher.Text };
 
