@@ -204,7 +204,10 @@
             this.Controls.Add(this.lblFirsName);
             this.Controls.Add(this.pnlNumberOfPeriode);
             this.Controls.Add(this.pnlDenomination);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmModifyStudent";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmModifyStudent";
             this.Load += new System.EventHandler(this.frmModifyStudent_Load);
             this.pnlNumberOfPeriode.ResumeLayout(false);

@@ -91,6 +91,7 @@
             this.btnReturn.TabIndex = 43;
             this.btnReturn.Text = "<";
             this.btnReturn.UseVisualStyleBackColor = false;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
             // lblTitle
             // 
@@ -199,7 +200,10 @@
             this.Controls.Add(this.lblFirsName);
             this.Controls.Add(this.pnlNumberOfPeriode);
             this.Controls.Add(this.pnlDenomination);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmAddStudent";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAddStudent";
             this.Load += new System.EventHandler(this.frmAddStudent_Load);
             this.panel1.ResumeLayout(false);

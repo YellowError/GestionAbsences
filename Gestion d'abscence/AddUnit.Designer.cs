@@ -299,7 +299,10 @@
             this.Controls.Add(this.pnlStartOn);
             this.Controls.Add(this.pnlNumberOfPeriode);
             this.Controls.Add(this.pnlDenomination);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AddUnit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddUnit";
             this.pnlTeacher.ResumeLayout(false);
             this.pnlTeacher.PerformLayout();

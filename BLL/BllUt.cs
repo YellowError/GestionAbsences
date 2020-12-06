@@ -22,6 +22,10 @@ namespace BLL
             return DalUe.getUtById(name);
         }
 
+        public static DtoUt getUtById(int id)
+        {
+            return DalUe.getUtById(id);
+        }
         public static string deleteUt(DtoUt ut)
         {
             return DalUe.deleteUt(ut);

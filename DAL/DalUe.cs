@@ -40,6 +40,21 @@ namespace DAL
             }
         }
 
+        public static DtoUt getUtById(int id)
+        {
+            try
+            {
+                Ut uts = Ut.uts.Find(item => item.Id == id);
+                DtoUt ut = new DtoUt(uts.Name, uts.Periodes, uts.StartAt, uts.EndAt, uts.Teacher, uts.Decisive, uts.Id, uts.IdStudents);
+                
+                return ut;
+            }
+            catch (NullReferenceException)
+            {
+                return new DtoUt() { ExceptionMessage = "not found" };
+            }
+        }
+
         public static string deleteUt(DtoUt ut)
         {
             Ut.uts.RemoveAt(findIndex(ut));

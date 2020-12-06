@@ -40,5 +40,12 @@ namespace Gestion_d_abscence
         {
             txbTotalAbsence.Text = "0";
         }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            frmManageStudents frm = new frmManageStudents();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

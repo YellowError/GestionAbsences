@@ -22,6 +22,11 @@ namespace PL
             return BllUt.getUtById(name);
         }
 
+        public static DtoUt getUtById(int id)
+        {
+            return BllUt.getUtById(id);
+        }
+
         public static void printUt(DataGridView dgvUt, TextBox txbSearch, Label lblNotFound)
         {
             if (txbSearch.Text.Length > 2)

@@ -81,6 +81,15 @@ namespace DAL
             return "Student added";
         }
 
+        public static void addAbsence(List<DtoStudent> students)
+        {
+            foreach (DtoStudent student in students)
+            {
+                int index = DbStudents.Students.FindIndex(x => x.Id == student.Id);
+                DbStudents.Students[index].TotalAbsence += 1;
+            }
+        }
+
 
     }
 }

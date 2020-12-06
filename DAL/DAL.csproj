@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="DalAttendance.cs" />
     <Compile Include="DalStudent.cs" />
     <Compile Include="DalUe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

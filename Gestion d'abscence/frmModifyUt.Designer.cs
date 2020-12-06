@@ -307,7 +307,10 @@
             this.Controls.Add(this.pnlStartOn);
             this.Controls.Add(this.pnlNumberOfPeriode);
             this.Controls.Add(this.pnlDenomination);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmModifyUt";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmModifyUt";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmModifyUt_FormClosed);
             this.Load += new System.EventHandler(this.frmModifyUt_Load);
