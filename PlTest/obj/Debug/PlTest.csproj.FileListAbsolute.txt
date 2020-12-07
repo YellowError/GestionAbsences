@@ -1,0 +1,30 @@
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\fr\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\fr\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\fr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\PlTest.dll
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\PlTest.pdb
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\BLL.dll
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\DAL.dll
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\DB.dll
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\DTO.dll
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\Gestion d'abscence.exe
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\PL.dll
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\BLL.pdb
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\DAL.pdb
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\DB.pdb
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\DTO.pdb
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\Gestion d'abscence.pdb
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\Gestion d'abscence.exe.config
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\PL.pdb
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\cours\vs2019\Gestion d'abscence\PlTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\cours\vs2019\Gestion d'abscence\PlTest\obj\Debug\PlTest.csprojAssemblyReference.cache
+D:\cours\vs2019\Gestion d'abscence\PlTest\obj\Debug\PlTest.csproj.CoreCompileInputs.cache
+D:\cours\vs2019\Gestion d'abscence\PlTest\obj\Debug\PlTest.csproj.CopyComplete
+D:\cours\vs2019\Gestion d'abscence\PlTest\obj\Debug\PlTest.dll
+D:\cours\vs2019\Gestion d'abscence\PlTest\obj\Debug\PlTest.pdb
